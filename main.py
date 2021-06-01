@@ -12,16 +12,17 @@ student_grades = {}
 
 #TODO-2: Write your code below to add the grades to student_grades.👇
 
-for key in student_scores:
-  if student_scores[key] > 90:
-    value = "Outstanding"
-  elif student_scores[key] > 80:
-    value = "Exceeds Expectations"
-  elif student_scores[key] > 70:
-    value = "Acceptable"
+for student in student_scores:
+  score = student_scores[student]
+  if score > 90:
+    grade = "Outstanding"
+  elif score > 80:
+    grade = "Exceeds Expectations"
+  elif score > 70:
+    grade = "Acceptable"
   else:
-    value = "Fail" 
-  student_grades[key] = value
+    scgradeore = "Fail" 
+  student_grades[student] = grade
 
     
 
